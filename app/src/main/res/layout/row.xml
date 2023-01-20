@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="181dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.049" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="163dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.947" />
+
+            <Button
+                android:id="@+id/kurang"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center_horizontal"
+                android:text="-"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95" />
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.95" />
+
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="120dp"
+                android:layout_height="129dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="9dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

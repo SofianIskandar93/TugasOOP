@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drink">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="634dp"
+        android:text="Drink"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec3"
+        android:layout_width="332dp"
+        android:layout_height="463dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/cek"
+        android:layout_width="129dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="71dp"
+        android:text="Check Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
